@@ -38,7 +38,7 @@ arrayListType::arrayListType(const arrayListType& otherList)
 	maxSize = otherList.maxSize;
 	length = otherList.length;
 
-	list = new int[maxSize];									//array creation
+	list = new int[maxSize];								//array creation
 
 	for (int j = 0; j < length; j++)							//copy otherList
 		list[j] = otherList.list[j];
