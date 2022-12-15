@@ -27,27 +27,27 @@ void unorderedArrayListType::insertAt(int location, int insertItem)
 	if (location < 0 || location >= maxSize)
 		cout << "The position of the item to be inserted "
 		<< "is out of range." << endl;
-	else if (length >= maxSize)												//the list is full
+	else if (length >= maxSize)							//the list is full
 		cout << "Cannot insert in a full list. " << endl;
 	else
 	{
 		for (int i = length; i > location; i--)
-			list[i] = list[i - 1];											//move the elements down
+			list[i] = list[i - 1];						//move the elements down
 
-		list[location] = insertItem;										//insert the item at the specified position
+		list[location] = insertItem;						//insert the item at the specified position
 
-		length++;															//increment the length
+		length++;								//increment the length
 	}
 }
 
 void unorderedArrayListType::insertEnd(int insertItem)
 {
-	if (length >= maxSize)													//the list is full
+	if (length >= maxSize)								//the list is full
 		cout << "Cannot insert new elements into a full list." << endl;
 	else
 	{
-		list[length] = insertItem;											//insert at the end
-		length++;															//increment the length
+		list[length] = insertItem;						//insert at the end
+		length++;								//increment the length
 	}
 }
 
