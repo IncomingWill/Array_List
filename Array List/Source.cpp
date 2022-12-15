@@ -14,24 +14,24 @@ P. 905-906, Challenge 6 and 10, List Program
 #include "arrayListType.hpp"
 #include "unorderedArrayListType.hpp"
 
-using std::cout;															//using specific calls instead of including all of napespace
+using std::cout;										//using specific calls instead of including all of napespace
 using std::endl;
 using std::cin;
 using std::string;
 
 //Function Prototypes
 
-void welcomeUser();															//Function to welcome user
-char inputValidation(char&);												//Function for input validation
+void welcomeUser();										//Function to welcome user
+char inputValidation(char&);									//Function for input validation
 
 int main()
 
 {
-	char runAgain = 'Y';													//Initialize variable to run program again, default to yes to start
+	char runAgain = 'Y';									//Initialize variable to run program again, default to yes to start
 
-	welcomeUser();															//Call introduction function
+	welcomeUser();										//Call introduction function
 
-	while (toupper(runAgain) == 'Y')										//While 'Y', run program, else quits
+	while (toupper(runAgain) == 'Y')							//While 'Y', run program, else quits
 
 	{
 		
@@ -43,7 +43,7 @@ int main()
 
 		cout << endl;
 
-		runAgain = inputValidation(runAgain);    							//User Validation of 'Y' or 'N'
+		runAgain = inputValidation(runAgain);    					//User Validation of 'Y' or 'N'
 
 		//uncomment next three lines with code to verify that mutator function 'set' functions properly. Sets to zeros.
 
